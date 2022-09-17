@@ -1,14 +1,4 @@
-import {
-  ApolloClient,
-  // createHttpLink,
-  InMemoryCache,
-} from "@apollo/client/core";
-// import { createApolloProvider } from "@vue/apollo-option";
-
-// HTTP connection to the API
-// const httpLink = createHttpLink({
-//   uri: "http://127.0.0.1:8000/graphql", // Django
-// });
+import { ApolloClient, InMemoryCache } from "@apollo/client/core";
 
 // Cache implementation
 const cache = new InMemoryCache();
@@ -17,13 +7,8 @@ const cache = new InMemoryCache();
 const apolloClient = new ApolloClient({
   // link: httpLink,
   cache,
-  uri: "http://127.0.0.1:8000/graphql",
+  uri: "http://127.0.0.1:8000/graphql", //django graphql
   connectToDevTools: true,
 });
 
-// const apolloProvider = createApolloProvider({
-//   defaultClient: apolloClient,
-// });
-
-// export default apolloProvider;
 export default apolloClient;

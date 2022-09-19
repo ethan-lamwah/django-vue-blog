@@ -7,8 +7,8 @@ const cache = new InMemoryCache();
 const apolloClient = new ApolloClient({
   // link: httpLink,
   cache,
-  uri: "http://127.0.0.1:8000/graphql", //django graphql
-  connectToDevTools: true,
+  uri: import.meta.env.VITE_GRAPHQL_URI, //django graphql
+  connectToDevTools: false,
 });
 
 export default apolloClient;

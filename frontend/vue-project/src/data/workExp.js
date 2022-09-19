@@ -2,7 +2,7 @@ const workExp = [
   {
     title: "Web Programmer",
     company: "Bright Smart Securities International (HK) Limited",
-    icon: "src/assets/company/bs.jpeg",
+    icon: "/company/bs.jpeg",
     location: "Hong Kong",
     startDate: "Jul 2019",
     endDate: "Feb 2022",
@@ -18,7 +18,7 @@ const workExp = [
   {
     title: "Programmer",
     company: "Kintetsu World Express (HK) Limited",
-    icon: "src/assets/company/kwe.jpeg",
+    icon: "/company/kwe.jpeg",
     location: "Hong Kong",
     startDate: "Jul 2018",
     endDate: "Jul 2019",
@@ -32,7 +32,7 @@ const workExp = [
   {
     title: "Part-time Software QA Assistant",
     company: "Hong Kong Economic Times",
-    icon: "src/assets/company/hket.jpeg",
+    icon: "/company/hket.jpeg",
     location: "Hong Kong",
     startDate: "Jul 2017",
     endDate: "Jul 2018",

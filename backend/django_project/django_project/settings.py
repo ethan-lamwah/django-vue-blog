@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = (os.environ.get('DEBUG_VALUE') == 'True')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-project-prod.us-west-2.elasticbeanstalk.com']
 
 
 # Application definition
@@ -147,7 +147,7 @@ AUTHENTICATION_BACKENDS = [
 
 # Setup CORS
 CORS_ORIGIN_ALLOW_ALL = False
-CORS_ORIGIN_WHITELIST = ('http://localhost:3000',)  # Port that Vue is using
+CORS_ORIGIN_WHITELIST = ('http://localhost:3000','https://ethanlam.dev','https://www.ethanlam.dev')  # Port that Vue is using
 
 # CKEditor
 CKEDITOR_UPLOAD_PATH = "uploads/"

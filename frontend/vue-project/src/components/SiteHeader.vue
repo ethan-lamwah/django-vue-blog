@@ -28,7 +28,7 @@ function userSignOut() {
 watch(
   () => route.name,
   () => {
-    console.log(`watch route.name changed to ❯${route.name}`);
+    // console.log(`watch route.name changed to ❯${route.name}`);
     currentRoute.value = route.name.toLowerCase();
   }
 );

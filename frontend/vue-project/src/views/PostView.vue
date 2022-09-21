@@ -18,7 +18,7 @@ const { result, refetch } = useQuery(POST_BY_SLUG_QUERY, {
 const post = computed(() => result.value?.postBySlug ?? null);
 
 function refetchContent() {
-  console.log("Comment submitted!");
+  // console.log("Comment submitted!");
   refetch();
   scrollToElement("#comment_end", { behavior: "smooth" });
 }

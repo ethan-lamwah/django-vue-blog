@@ -1,6 +1,7 @@
 [build]
   base = "frontend/vue-project/"
-  publish = "frontend/vue-project/dist"
+  # This is relative to the base directory if one has been set
+  publish = "dist/"
   command = "npm run build"
 
 # The following redirect is intended for use with most SPAs

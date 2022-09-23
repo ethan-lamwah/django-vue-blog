@@ -1,7 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.conf import settings
 from django.db import models
-from ckeditor.fields import RichTextField
+# from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
 
 # Create your models here.
@@ -95,7 +95,7 @@ class Post(models.Model):
     category = models.ForeignKey(
         Category, on_delete=models.SET_NULL, null=True)
     tags = models.ManyToManyField(Tag, blank=True)
-    likes = models.ManyToManyField(User, related_name='post_like')
+    likes = models.ManyToManyField(User, related_name='post_like', blank=True)
 
     class Meta:
         verbose_name = 'post'
@@ -120,7 +120,7 @@ class Comment(models.Model):
     is_approved = models.BooleanField(default=True)
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     post = models.ForeignKey(Post, on_delete=models.SET_NULL, null=True)
-    likes = models.ManyToManyField(User, related_name='comment_like')
+    likes = models.ManyToManyField(User, related_name='comment_like', blank=True)
 
     class Meta:
         verbose_name = 'comment'

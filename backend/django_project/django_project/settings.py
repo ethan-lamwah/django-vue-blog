@@ -37,6 +37,7 @@ ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS').split(',')
 # Application definition
 
 INSTALLED_APPS = [
+    'ebhealthcheck.apps.EBHealthCheckConfig',
     'blog.apps.BlogConfig',
     'ckeditor',
     'ckeditor_uploader',

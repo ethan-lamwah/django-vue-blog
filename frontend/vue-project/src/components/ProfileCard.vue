@@ -24,29 +24,20 @@ const props = defineProps({
       Wah Yun Lam (Ethan)
     </h3>
     <div class="space-y-4 mt-4 mb-2" v-if="props.showMeta">
-      <div class="flex items-center text-gray-200">
-        <div>
+      <div class="flex items-center text-gray-400">
+        <a class="px-3 hover:text-gray-200" :href="siteData.github">
           <span class="sr-only">GitHub</span>
-          <font-awesome-icon icon="fa-brands fa-github" class="h-6 w-6" />
-        </div>
-        <a class="px-2" :href="siteData.github">GitHub</a>
-      </div>
-      <div class="flex items-center text-gray-200">
-        <div>
-          <span class="sr-only">Linkedin</span>
-          <font-awesome-icon icon="fa-brands fa-linkedin" class="h-6 w-6" />
-        </div>
-        <a class="px-2" :href="siteData.linkedin">Linkedin</a>
-      </div>
-      <div class="flex items-center text-gray-200">
-        <div>
-          <span class="sr-only">Email</span>
-          <font-awesome-icon icon="fa-regular fa-envelope" class="h-6 w-6" />
-        </div>
-        <a class="px-2" :href="'mailto:' + siteData.email">Email</a>
+          <font-awesome-icon icon="fa-brands fa-github" class="h-6 w-6"
+        /></a>
+        <a class="px-3 hover:text-gray-200" :href="siteData.linkedin"
+          ><span class="sr-only">Linkedin</span>
+          <font-awesome-icon icon="fa-brands fa-linkedin" class="h-6 w-6"
+        /></a>
+        <a class="px-3 hover:text-gray-200" :href="'mailto:' + siteData.email"
+          ><span class="sr-only">Email</span>
+          <font-awesome-icon icon="fa-regular fa-envelope" class="h-6 w-6"
+        /></a>
       </div>
     </div>
-    <!-- <div class="text-gray-400">Pos</div>
-          <div class="text-gray-400">Company</div> -->
   </div>
 </template>

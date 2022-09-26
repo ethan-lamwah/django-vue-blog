@@ -69,7 +69,7 @@ watch(
                     {{ link.name }}
                   </RouterLink>
                 </li>
-                <li v-if="!isAuthenticated">
+                <!-- <li v-if="!isAuthenticated">
                   <RouterLink
                     :to="{ name: 'Login', query: { redirect: $route.path } }"
                     class="nav-link-btn"
@@ -80,7 +80,7 @@ watch(
                   <a href="#" class="nav-link-btn" @click="userSignOut">
                     Log Out
                   </a>
-                </li>
+                </li> -->
               </ul>
             </nav>
           </div>
@@ -138,7 +138,7 @@ watch(
                       {{ link.name }}
                     </RouterLink>
                   </li>
-                  <li v-if="!isAuthenticated">
+                  <!-- <li v-if="!isAuthenticated">
                     <RouterLink
                       :to="{ name: 'Login', query: { redirect: $route.path } }"
                       class="nav-link-btn !text-xl"
@@ -153,7 +153,7 @@ watch(
                     >
                       Log Out
                     </a>
-                  </li>
+                  </li> -->
                 </ul>
               </nav>
             </div>

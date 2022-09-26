@@ -133,7 +133,7 @@ onMounted(() => {
                 </h3>
                 <time>{{ getLocaleDate(post.datePublished) }}</time>
               </div>
-              <div class="flex gap-2 lg:flex-col">
+              <div class="flex gap-2 lg:flex-col" v-if="post.tags.length != 0">
                 <h3
                   class="text-indigo-300 uppercase text-lg tracking-wider basis-[6em] lg:basis-0"
                 >

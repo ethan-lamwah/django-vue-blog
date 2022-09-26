@@ -19,20 +19,22 @@ const aboutMe = computed(() => result.value?.site?.about ?? null);
       <div class="grid gap-24 grid-cols-1 lg:grid-cols-3">
         <main class="block col-span-1 lg:col-span-2 mt-0">
           <article
-            class="prose lg:prose-xl dark:prose-invert prose-img:rounded-xl prose-a:text-indigo-400 prose-a:pb-1 prose-a:link-sliding-underline prose-a:no-underline prose-headings:text-indigo-100 prose-p:text-gray-300 prose-strong:text-gray-200 prose-code:text-indigo-500"
+            class="prose lg:prose-lg dark:prose-invert prose-a:link-sliding-underline prose-headings:text-neon-light"
             v-html="aboutMe"
           ></article>
+          <!-- <article
+            class="prose lg:prose-lg dark:prose-invert prose-img:rounded-lg prose-a:text-indigo-400 prose-a:pb-1 prose-a:link-sliding-underline prose-a:no-underline prose-headings:text-indigo-100 prose-p:text-gray-300 prose-strong:text-gray-200 prose-code:text-indigo-500 prose-li:text-gray-300"
+            v-html="aboutMe"
+          ></article> -->
           <section class="mt-12 lg:mt-20">
             <div class="py-6 lg:pb-12">
-              <h2
-                class="text-3xl sm:text-4xl font-extrabold text-gradient gradient-indigo"
-              >
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-neon-light">
                 Working experience
               </h2>
             </div>
             <div class="relative border-0 sm:border-l border-gray-800 sm:pl-5">
               <div
-                class="mb-10 sm:ml-6 space-y-2"
+                class="mb-10 sm:ml-6 space-y-2 text-base lg:text-lg"
                 v-for="exp in workExp"
                 :key="exp.id"
               >
@@ -56,7 +58,7 @@ const aboutMe = computed(() => result.value?.site?.about ?? null);
                     >Currently</span
                   >
                 </div>
-                <div class="text-gray-400 text-sm italic">
+                <div class="text-gray-400 text-base italic">
                   <time v-if="!exp.currentlyWorking"
                     >{{ exp.startDate }} -
                     {{ exp.currentlyWorking ? "Current" : exp.endDate }}</time
@@ -77,8 +79,8 @@ const aboutMe = computed(() => result.value?.site?.about ?? null);
             </div>
           </section>
         </main>
-        <aside class="lg:col-span-1 lg:flex lg:flex-col hidden">
-          <div class="lg:sticky top-16 [&>*]:mb-12">
+        <aside class="lg:col-span-1 lg:flex lg:flex-col hidden order-first">
+          <div class="lg:sticky top-24 [&>*]:mb-12">
             <ProfileCard></ProfileCard>
           </div>
         </aside>

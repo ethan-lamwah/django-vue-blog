@@ -21,6 +21,33 @@ module.exports = {
           },
         },
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: colors.gray[300],
+            "h1,h2,h3,h4": {
+              color: colors.indigo[100],
+            },
+            a: {
+              color: colors.indigo[400],
+              paddingBottom: "0.25rem",
+              textDecorationLine: "none",
+              "&:hover": {
+                color: colors.indigo[300],
+              },
+            },
+            img: {
+              borderRadius: "0.5rem",
+            },
+            strong: {
+              color: colors.gray[200],
+            },
+            pre:{
+              color: colors.gray[200],
+            },
+          },
+        },
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

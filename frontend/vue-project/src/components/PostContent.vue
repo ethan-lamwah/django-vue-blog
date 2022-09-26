@@ -70,7 +70,7 @@ onMounted(() => {
             />
           </div>
           <article
-            class="prose lg:prose-lg dark:prose-invert prose-img:rounded-xl prose-a:text-indigo-400 prose-a:pb-1 prose-a:link-sliding-underline prose-a:no-underline prose-headings:text-indigo-100 prose-p:text-gray-300 prose-strong:text-gray-200 prose-code:text-indigo-500"
+            class="prose lg:prose-lg dark:prose-invert prose-a:link-sliding-underline prose-headings:text-neon-light"
             v-html="post.content"
             data-toc-content
           ></article>
@@ -183,6 +183,6 @@ onMounted(() => {
 </template>
 <style scoped>
 aside a.active {
-  @apply font-medium text-cyan-200 border-cyan-200;
+  @apply font-medium text-sky-200 border-sky-200 drop-shadow-[0_0_8px_rgba(99,102,241,0.75)];
 }
 </style>

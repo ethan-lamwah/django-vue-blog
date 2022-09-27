@@ -42,8 +42,14 @@ module.exports = {
             strong: {
               color: colors.gray[200],
             },
-            pre:{
+            code: {
+              color: colors.red[400],
+            },
+            pre: {
               color: colors.gray[200],
+            },
+            blockquote: {
+              color: colors.gray[400],
             },
           },
         },

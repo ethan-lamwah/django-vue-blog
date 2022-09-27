@@ -7,7 +7,12 @@ import SiteFooter from "./components/SiteFooter.vue";
 <template>
   <div class="bg-gray-900 text-gray-100 min-h-screen pt-16">
     <SiteHeader />
-    <RouterView />
+    <!-- <RouterView /> -->
+    <RouterView v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </RouterView>
     <SiteFooter />
   </div>
 </template>
@@ -16,5 +21,14 @@ import SiteFooter from "./components/SiteFooter.vue";
 
 aside a.active {
   @apply font-bold text-indigo-500;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

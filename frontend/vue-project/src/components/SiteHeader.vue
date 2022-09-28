@@ -58,7 +58,7 @@ watch(
           </RouterLink>
         </div>
         <div class="flex items-center text-base leading-5">
-          <div class="hidden md:block">
+          <div class="hidden sm:block">
             <nav>
               <ul class="flex items-center">
                 <li v-for="link in navRouterLinks" :key="link.name">
@@ -102,7 +102,7 @@ watch(
           ></path>
         </svg>
       </button> -->
-          <div class="-mr-2 md:hidden">
+          <div class="-mr-2 sm:hidden">
             <button
               type="button"
               class="focus:outline-none focus:text-indigo-500 hover:bg-indigo-100/10 hover:text-indigo-400 p-2 rounded-md text-gray-300 transition"

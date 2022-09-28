@@ -9,11 +9,13 @@ import siteData from "../data/siteData";
       <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8" />
       <div class="flex flex-col items-center sm:flex-row sm:justify-between">
         <div>
-          <ul class="flex flex-wrap justify-center text-md">
+          <ul
+            class="flex flex-wrap justify-center text-md space-x-4 md:space-x-6"
+          >
             <li v-for="link in navRouterLinks" :key="link.name">
               <RouterLink
                 :to="link.path"
-                class="mr-4 py-1 link-sliding-underline-to-side md:mr-6"
+                class="py-1 link-sliding-underline-to-side"
               >
                 {{ link.name }}
               </RouterLink>

@@ -1,5 +1,7 @@
 # ETHAN@DEV - My personal blog
 
+[Explore my journey here!](https://www.ethanlam.dev/)
+
 This blog uses **[Vue.js](https://vuejs.org/)** and **[Tailwind CSS](https://tailwindcss.com/)** for the frontend, **[Django](https://www.djangoproject.com/)** for the backend, and **[GraphQL](https://graphql.org/)** as API manipulation to communicate between them. The static site is hosted and automated using **[Netlify](https://www.netlify.com/)**. While the backend is deployed to **[AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/)**, leveraging multiple AWS services like **[EC2](https://aws.amazon.com/ec2/)** for compute instances, **[RDS](https://aws.amazon.com/rds/)** for Postgres databases, and **[S3](https://aws.amazon.com/s3/)** for static files storage.
 
 For more details about the packages, libraries and frameworks used in this project, please refer to the following sections.

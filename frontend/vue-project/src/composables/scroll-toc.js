@@ -1,5 +1,4 @@
 import { ref, onMounted } from "vue";
-// import getToc from "@/toc.js";
 
 export function useScrollToc(selector, tocOptions, observerOptions) {
   const _tocOptions = tocOptions || {};

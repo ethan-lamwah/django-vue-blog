@@ -8,11 +8,12 @@ const workExp = [
     endDate: "Feb 2022",
     currentlyWorking: false,
     description: [
-      "Involved in developing and maintaining company’s websites and in-house systems using C#, .NET, jQuery, CSS(Bootstrap), and Umbraco CMS",
-      "Led the development of a new payment system integrated with different banks' payment gateway APIs resulting in reducing payment process time by 66%, and over 80% of clients used the service ",
-      "Enhanced the customer service system for the CS department, increasing inquiries response time by 43 % and automated 73% of reporting workload",
-      "Built and restructured the transactions tracking system and improved the stability of deposit automation",
-      "Worked closely with different teams on system integration",
+      "Involved in developing and maintaining the company’s web-based applications and in-house systems using C#, .NET, ASP.NET, ASP.NET MVC, Entity Framework, JavaScript, jQuery, HTML5, CSS, MS SQL Server, Team Foundation Server, and Umbraco CMS",
+      "Created, and modified existing Stored Procedures, queries, and views in SQL Server",
+      "Led the development of a new payment system integrated with different banks' payment gateway APIs, resulting in reducing payment process time by 66%, and over 80% of clients use the service",
+      "Developed a Bank-Securities Transfer System that provides fund transfer between Chinese banks and securities using Socket (TCP/IP)",
+      "Developed a Transaction History Scheduler that fetches daily transactions from banks via APIs and performs data conversion for deposit automation using Task asynchronous programming model (TAP)",
+      "Built and Enhanced the customer service system for the CS department, reducing inquiries response time by 43 % and automated 73% of specific reporting workload",
     ],
   },
   {
@@ -24,9 +25,10 @@ const workExp = [
     endDate: "Jul 2019",
     currentlyWorking: false,
     description: [
-      "Developed and implemented a Truck Queue Management System by reducing check-in time and handling the navigation of trucks in logistics centers",
-      "Developed web and console applications for in-house products using C#, .NET, JavaScript, CSS",
-      "Conducted system testing and prepared technical documentation ",
+      "Developed web applications for in-house products using C#, .NET, ASP.NET, MS SQL Server, JavaScript, and CSS",
+      "Designed and developed KCLC Truck Queuing System (TQS) by automating the navigation of trucks and reducing check-in time in logistics centers using ASP.NET Web Forms, Windows Forms, ADO.NET",
+      "Developed KWE Excel Import, a web application allows excel file uploads, data extraction and processing using ASP.NET Web Forms, OLEDB",
+      "Conducted system testing and prepared technical documentation",
     ],
   },
   {

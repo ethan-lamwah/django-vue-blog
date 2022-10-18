@@ -17,6 +17,9 @@ onMounted(() => {
   <ul id="typed-bio" class="block">
     <li>I believe in learning by doing.</li>
     <li>I learn by focusing on techniques first. Creativity comes later.</li>
+    <li>I worked mainly with C# and .NET technologies in my previous job.</li>
+    <li>I just learnt how to build things in Vue.js and Django.</li>
+    <li>My next journey: .NET Core, Angular and TypeScript.</li>
     <li>
       My goal is to become a
       <strong class="text-highlight">software engineer</strong>.
@@ -30,10 +33,6 @@ onMounted(() => {
       <strong class="text-highlight">Python</strong> since its minimal syntax,
       versatility, and excellent library support.
     </li>
-    <li>I worked mainly with C# and ASP.NET in my previous job.</li>
-
-    <li>I'm currently learning Vue.js and Django.</li>
-
     <li>
       I've recently relocated to Vancouver
       <i class="twa twa-flag-canada"></i> with my work permit.

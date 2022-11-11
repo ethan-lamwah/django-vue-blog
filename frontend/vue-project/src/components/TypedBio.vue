@@ -17,8 +17,8 @@ onMounted(() => {
   <ul id="typed-bio" class="block">
     <li>I believe in learning by doing.</li>
     <li>I learn by focusing on techniques first. Creativity comes later.</li>
-    <li>I worked mainly with C# and .NET technologies in my previous job.</li>
-    <li>I just learnt how to build things in Vue.js and Django.</li>
+    <li>I worked mainly with Microsoft Technologies like C#, .NET in my previous job.</li>
+    <li>I built this blog in Vue.js, Django and GraphQL.</li>
     <li>My next journey: .NET Core, Angular and TypeScript.</li>
     <li>
       My goal is to become a

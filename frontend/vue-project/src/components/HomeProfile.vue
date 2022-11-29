@@ -36,7 +36,7 @@ const posts = computed(() => result.value?.allPosts.slice(0, 3) ?? null);
       <div class="w-full md:max-w-2xl space-y-6">
         <p>
           I'm <strong class="text-highlight">Ethan</strong>, a developer
-          passionate about full-stack development and cloud computing. Welcome
+          passionate about <strong class="text-highlight">full-stack development, cloud computing, data science and engineering</strong>. Welcome
           to my spot where I share my thoughts and what I've learned in coding
           world.
         </p>

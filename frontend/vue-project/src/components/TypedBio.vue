@@ -21,10 +21,6 @@ onMounted(() => {
     <li>I built this blog in Vue.js, Django and GraphQL.</li>
     <li>My next journey: .NET Core, Angular and TypeScript.</li>
     <li>
-      My goal is to become a
-      <strong class="text-highlight">software engineer</strong>.
-    </li>
-    <li>
       My first programming language in college was
       <strong class="text-highlight">C++</strong>.
     </li>
